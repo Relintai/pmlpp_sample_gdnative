@@ -34,3 +34,5 @@ game/android/build/*
 build.config
 
 __pycache__/*
+
+gdnative_cpp/
