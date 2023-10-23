@@ -1,0 +1,133 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": @"ArrayOperations",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/utilities/classes/structures/array_operations.gd"
+}, {
+"base": "Reference",
+"class": @"Bar",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/utilities/classes/plotting/bar.gd"
+}, {
+"base": "Chart",
+"class": @"BarChart",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/control_charts/BarChart/bar_chart.gd"
+}, {
+"base": "Control",
+"class": @"Chart",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/control_charts/chart.gd"
+}, {
+"base": "Reference",
+"class": @"ChartProperties",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/utilities/classes/plotting/chart_properties.gd"
+}, {
+"base": "Resource",
+"class": @"DataFrame",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/utilities/classes/structures/data_frame.gd"
+}, {
+"base": "PanelContainer",
+"class": @"DataTooltip",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/utilities/containers/data_tooltip/data_tooltip.gd"
+}, {
+"base": "VBoxContainer",
+"class": @"LegendElement",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/utilities/containers/legend/function_legend.gd"
+}, {
+"base": "ScatterChart",
+"class": @"LineChart",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/control_charts/LineChart/line_chart.gd"
+}, {
+"base": "Resource",
+"class": @"Matrix",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/utilities/classes/structures/matrix.gd"
+}, {
+"base": "Reference",
+"class": @"MatrixGenerator",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/utilities/classes/structures/matrix_generator.gd"
+}, {
+"base": "Reference",
+"class": @"Pair",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/utilities/classes/structures/pair.gd"
+}, {
+"base": "Reference",
+"class": @"Point",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/utilities/classes/plotting/point.gd"
+}, {
+"base": "Reference",
+"class": @"SampledAxis",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/utilities/classes/plotting/sampled_axis.gd"
+}, {
+"base": "Chart",
+"class": @"ScatterChart",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/control_charts/ScatterChart/scatter_chart.gd"
+}, {
+"base": "Reference",
+"class": @"Slice",
+"language": @"GDScript",
+"path": "res://addons/easy_charts/utilities/components/slice/slice.gd"
+} ]
+_global_script_class_icons={
+@"Chart": "",
+@"BarChart": "",
+@"LineChart": "",
+@"ScatterChart": "",
+@"Bar": "",
+@"ChartProperties": "",
+@"Point": "",
+@"SampledAxis": "",
+@"ArrayOperations": "",
+@"DataFrame": "",
+@"Matrix": "",
+@"MatrixGenerator": "",
+@"Pair": "",
+@"Slice": "",
+@"DataTooltip": "",
+@"LegendElement": ""
+}
+
+[application]
+
+config/name="PMLPP Sample"
+run/main_scene="res://Main.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+ECUtilities="*res://addons/easy_charts/utilities/scripts/ec_utilities.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/easy_charts/plugin.cfg" )
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"
