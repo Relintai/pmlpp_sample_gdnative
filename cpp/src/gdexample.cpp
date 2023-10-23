@@ -1,7 +1,5 @@
 #include "gdexample.h"
 
-using namespace godot;
-
 void GDExample::_register_methods() {
 	register_method("_process", &GDExample::_process);
 	register_property<GDExample, float>("amplitude", &GDExample::amplitude, 10.0);
@@ -31,9 +29,8 @@ void GDExample::_process(float delta) {
 	Vector2 pos = get_position();
 
 	Vector2 new_position = Vector2(
-		amplitude * sin(time_passed * speed),
-		amplitude * cos(time_passed * speed)
-	);
+			amplitude * sin(time_passed * speed),
+			amplitude * cos(time_passed * speed));
 
 	set_position(new_position);
 

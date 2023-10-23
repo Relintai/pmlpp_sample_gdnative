@@ -1,13 +1,13 @@
 #ifndef GDEXAMPLE_H
 #define GDEXAMPLE_H
 
-#include <Godot.hpp>
-#include <Sprite.hpp>
+#include "gen/object.h"
+#include "gen/sprite.h"
 
-namespace godot {
+#include "core/pandemonium.h"
 
 class GDExample : public Sprite {
-	GODOT_CLASS(GDExample, Sprite)
+	PANDEMONIUM_CLASS(GDExample, Sprite)
 
 private:
 	float time_passed;
@@ -27,7 +27,5 @@ public:
 	void set_speed(float p_speed);
 	float get_speed();
 };
-
-}
 
 #endif

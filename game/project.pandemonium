@@ -44,6 +44,11 @@ _global_script_classes=[ {
 "language": @"GDScript",
 "path": "res://addons/easy_charts/utilities/containers/data_tooltip/data_tooltip.gd"
 }, {
+"base": "Sprite",
+"class": @"GDExample",
+"language": @"NativeScript",
+"path": "res://gdn/gdexample.gdns"
+}, {
 "base": "VBoxContainer",
 "class": @"LegendElement",
 "language": @"GDScript",
@@ -90,22 +95,23 @@ _global_script_classes=[ {
 "path": "res://addons/easy_charts/utilities/components/slice/slice.gd"
 } ]
 _global_script_class_icons={
-@"Chart": "",
-@"BarChart": "",
-@"LineChart": "",
-@"ScatterChart": "",
-@"Bar": "",
-@"ChartProperties": "",
-@"Point": "",
-@"SampledAxis": "",
-@"ArrayOperations": "",
-@"DataFrame": "",
-@"Matrix": "",
-@"MatrixGenerator": "",
-@"Pair": "",
-@"Slice": "",
+@"LegendElement": "",
 @"DataTooltip": "",
-@"LegendElement": ""
+@"Slice": "",
+@"Pair": "",
+@"MatrixGenerator": "",
+@"Matrix": "",
+@"DataFrame": "",
+@"ArrayOperations": "",
+@"SampledAxis": "",
+@"Point": "",
+@"ChartProperties": "",
+@"Bar": "",
+@"ScatterChart": "",
+@"LineChart": "",
+@"BarChart": "",
+@"Chart": "",
+@"GDExample": ""
 }
 
 [application]
@@ -121,6 +127,10 @@ ECUtilities="*res://addons/easy_charts/utilities/scripts/ec_utilities.gd"
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/easy_charts/plugin.cfg" )
+
+[gdnative]
+
+singletons=[  ]
 
 [physics]
 

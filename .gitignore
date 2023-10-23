@@ -7,6 +7,9 @@ __pycache__/**
 
 *.pyc
 
+*.so
+*.os
+
 *.d
 *.o
 *.meta
