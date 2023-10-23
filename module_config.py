@@ -4,10 +4,11 @@ pandemonium_branch = 'master'
 engine_repository = [ ['https://github.com/Relintai/pandemonium_engine.git', 'git@github.com:Relintai/pandemonium_engine.git'], 'pandemonium_engine', '' ]
 
 # Relative to this script's directory
-module_install_folder = './pandemonium_engine/custom_modules/'
+#module_install_folder = './pandemonium_engine/custom_modules/'
+module_install_folder = './custom_modules/'
 
 module_repositories = [
-	[ ['https://github.com/Relintai/pmlpp.git', 'git@github.com:Relintai/pmlpp.git'], 'pmlpp', '' ],
+	#[ ['https://github.com/Relintai/pmlpp.git', 'git@github.com:Relintai/pmlpp.git'], 'pmlpp', '' ],
 ]
 
 removed_modules = [
@@ -20,7 +21,8 @@ third_party_addon_repositories = [
 ]
 
 # Relative to the engine directory
-custom_module_folders = 'custom_modules'
+#custom_module_folders = 'custom_modules'
+custom_module_folders = ''
 
 slim_args = ''
 slim_args += 'module_bmp_enabled=no '

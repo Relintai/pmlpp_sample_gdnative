@@ -111,7 +111,7 @@ _global_script_class_icons={
 @"LineChart": "",
 @"BarChart": "",
 @"Chart": "",
-@"GDExample": ""
+@"GDExample": "res://icon.png"
 }
 
 [application]

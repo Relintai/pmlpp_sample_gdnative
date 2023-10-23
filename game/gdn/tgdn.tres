@@ -1,5 +1,6 @@
 [gd_resource type="GDNativeLibrary" format=2]
 
 [resource]
+load_once = false
 entry/X11.64 = "res://gdn/x11/libgdexample.so"
 dependency/X11.64 = [  ]
